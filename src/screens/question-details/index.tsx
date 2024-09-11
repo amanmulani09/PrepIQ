@@ -1,26 +1,28 @@
-import {Text, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
-import {TouchableOpacity} from 'react-native';
-const Home = ({navigation}) => {
+
+const QuestionDetails = ({navigation}) => {
   return (
     <View>
-      <Text>Home Screen</Text>
+      <Text>QuestionDetails Screen</Text>
       <TouchableOpacity
         style={{
           borderWidth: 1,
           paddingHorizontal: 5,
           paddingVertical: 8,
-          width: 170,
+          width: 90,
           marginHorizontal: 10,
           marginVertical: 20,
         }}
         onPress={() => {
-          navigation.navigate('QUESTIONDETAILS');
+          navigation.navigate('HOME');
         }}>
-        <Text>Go to QUESTIONDETAILS</Text>
+        <Text>Go to Home</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default Home;
+export default QuestionDetails;
+
+const styles = StyleSheet.create({});
