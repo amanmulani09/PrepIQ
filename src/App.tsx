@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import SplashScreen from './components/splash-screen';
-import {Text} from 'react-native';
 import Router from './navigation';
 const App = () => {
   const [animationCompleted, setAnimationComplete] = useState<Boolean>(false);

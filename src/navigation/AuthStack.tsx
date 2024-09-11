@@ -8,8 +8,12 @@ const AuthStack = createNativeStackNavigator();
 const AuthStackNavigator = () => {
   return (
     <AuthStack.Navigator initialRouteName={Screens.SIGNIN}>
-      {AuthStackScreens.map(screen => (
-        <AuthStack.Screen name={screen.name} component={screen.component} />
+      {AuthStackScreens.map((screen, index) => (
+        <AuthStack.Screen
+          name={screen.name}
+          component={screen.component}
+          key={index * Math.random()}
+        />
       ))}
     </AuthStack.Navigator>
   );

@@ -6,12 +6,14 @@ interface Props {
 }
 
 const SplashScreen: FunctionComponent<Props> = ({onFinish}) => {
+  const isLoading = false;
   return (
     <LottieView
       source={require('../../assets/images/splash.json')}
       style={{width: '100%', height: '100%'}}
       autoPlay
-      loop={false}
+      duration={10000}
+      loop={isLoading}
       onAnimationFinish={() => onFinish(true)}
     />
   );
