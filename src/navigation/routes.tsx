@@ -28,21 +28,17 @@ export const TabItems = [
   {
     name: Screens.HOME,
     component: Home,
-    icon: '',
   },
   {
     name: Screens.LANGUAGUES,
     component: Languages,
-    icon: '',
   },
   {
     name: Screens.BOOKMARKS,
     component: BookmarkQuestions,
-    icon: '',
   },
   {
     name: Screens.PROFILE,
     component: Profile,
-    icon: '',
   },
 ];

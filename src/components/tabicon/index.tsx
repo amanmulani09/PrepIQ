@@ -1,13 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-const TabIcon = ({}) => {
+import FontAwesome6Icon from 'react-native-vector-icons/FontAwesome6';
+
+const TabIcon = ({name, size, color}) => {
+  const IconNameMap = {
+    HOME: 'house',
+    LANGUAGUES: 'language',
+    BOOKMARKS: 'bookmark',
+    PROFILE: 'user',
+  };
+
   return (
-    <View>
-      <Text>TabIcon</Text>
-    </View>
+    <FontAwesome6Icon name={IconNameMap[name]} size={size} color={color} />
   );
 };
 
 export default TabIcon;
-
-const styles = StyleSheet.create({});
